@@ -1,0 +1,21 @@
+[project]
+name = "tosca-sionna-runner"
+license = "Apache-2.0"
+version = "0.1.0"
+description = "TOSCA-Sionna Runner: Sionna RT on the user's own GPU for the TOSCA radio planning panel"
+requires-python = ">=3.11,<3.13"
+dependencies = [
+    "sionna-rt>=1.2.2,<2",
+    "fastapi>=0.115",
+    "uvicorn>=0.30",
+    "python-multipart>=0.0.9",
+    "jsonschema>=4.23",
+    "mapbox-earcut>=2.1.0",
+    "pyproj>=3.7.2",
+]
+
+[tool.pytest.ini_options]
+testpaths = ["test_app.py", "test_geodata_scene.py", "test_lod3_tiles.py"]
+
+[dependency-groups]
+dev = ["pytest>=8", "httpx>=0.27"]

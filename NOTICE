@@ -1,0 +1,16 @@
+TOSCA-Sionna Runner
+Copyright (c) 2026 Digital City Science
+
+This product is licensed under the Apache License, Version 2.0 (see LICENSE).
+
+It builds on the following work by NVIDIA, also under the Apache License 2.0:
+
+- Sionna RT (https://github.com/NVlabs/sionna-rt), used as a library for the
+  ray tracing, radio maps and paths.
+  Copyright (c) 2021-2026 NVIDIA CORPORATION & AFFILIATES.
+
+- Sionna RT GUI (https://github.com/NVlabs/sionna-rt-gui), the desktop
+  application. The runner's parameter names, defaults and groups (app.py,
+  PARAMETER_SCHEMA) follow its config.py; no source files were copied.
+  Copyright (c) 2025-2026 NVIDIA CORPORATION & AFFILIATES.
+
